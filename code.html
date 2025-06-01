@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>My Portfolio</title>
+  <style>
+    /* Inline CSS */
+    * {
+      margin: 0; padding: 0; box-sizing: border-box;
+    }
+    html {
+      scroll-behavior: smooth;
+    }
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: #f4f4f4;
+      color: #333;
+      line-height: 1.6;
+      padding-top: 60px;
+    }
+    nav {
+      position: fixed;
+      top: 0; left: 0; right: 0;
+      background: #333;
+      padding: 15px 30px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      z-index: 1000;
+    }
+    nav .logo {
+      color: white;
+      font-size: 1.5em;
+      font-weight: bold;
+    }
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 20px;
+    }
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+      font-weight: 600;
+      transition: color 0.3s ease;
+    }
+    nav ul li a:hover {
+      color: #ff6f61;
+    }
+    header {
+      background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+      color: white;
+      text-align: center;
+      padding: 80px 20px 60px;
+    }
+    header img {
+      width: 150px;
+      height: 150px;
+      object-fit: cover;
+      border-radius: 50%;
+      border: 5px solid white;
+      margin-top: 20px;
+    }
+    header h1 {
+      font-size: 2.8rem;
+      margin-top: 20px;
+    }
+    header p {
+      font-size: 1.2rem;
+      margin-top: 10px;
+      max-width: 600px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    section {
+      max-width: 900px;
+      margin: 40px auto;
+      background: white;
+      padding: 30px 40px;
+      border-radius: 8px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.1);
+    }
+    section h2 {
+      margin-bottom: 20px;
+      color: #222;
+      border-bottom: 2px solid #ff6f61;
+      padding-bottom: 8px;
+    }
+    .about p {
+      margin-bottom: 15px;
+    }
+    .skills-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-top: 10px;
+    }
+    .skill {
+      background: #4facfe;
+      color: white;
+      padding: 8px 15px;
+      border-radius: 20px;
+      font-weight: 600;
+      font-size: 0.9rem;
+    }
+    footer {
+      text-align: center;
+      padding: 25px 10px;
+      background: #222;
+      color: white;
+      margin-top: 50px;
+      font-size: 0.9rem;
+    }
+    /* Responsive */
+    @media (max-width: 600px) {
+      nav ul {
+        flex-direction: column;
+        gap: 10px;
+      }
+      section {
+        margin: 20px 15px;
+        padding: 20px;
+      }
+      header h1 {
+        font-size: 2rem;
+      }
+      header p {
+        font-size: 1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <div class="logo">ARAVIND KANNAN S</div>
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About Me</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <header id="home">
+    <img src="https://i.pravatar.c" alt="Professional Photo" />
+    <h1>Hello, I'm ARAVIND KANNAN S</h1>
+    <p>
+      A passionate web developer specializing in building responsive and user-friendly websites. Skilled in HTML, CSS, JavaScript, and modern web technologies.
+    </p>
+  </header>
+
+  <section id="about" class="about">
+    <h2>About Me</h2>
+    <p>
+      I have a background in Computer Science with a degree from VIT University. Over the past few years, I’ve worked on multiple web development projects ranging from small business sites to interactive web applications.
+    </p>
+    <p>
+      My professional experience includes internships and freelance projects where I honed my skills in frontend and backend development. I enjoy solving problems and learning new technologies.
+    </p>
+  </section>
+
+  <section id="skills">
+    <h2>Skills</h2>
+    <div class="skills-list">
+      <span class="skill">HTML5</span>
+      <span class="skill">CSS3</span>
+      <span class="skill">JavaScript</span>
+      <span class="skill">React</span>
+      <span class="skill">Node.js</span>
+      <span class="skill">Git & GitHub</span>
+      <span class="skill">Responsive Design</span>
+      <span class="skill">REST APIs</span>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>Feel free to reach out for collaboration or freelance opportunities.</p>
+    <p>Email: <a href="kannansaravind3@gmail.com">kannansaravind3@gmail.com</a></p>
+    <p>LinkedIn: <a href="https://linkedin.com/in/yourprofile" target="_blank" rel="noopener">linkedin.com/in/yourprofile</a></p>
+  </section>
+
+  <footer>
+    &copy; 2025 ARAVIND KANNAN. All rights reserved.
+  </footer>
+
+</body>
+</html>
